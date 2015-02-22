@@ -11,7 +11,8 @@
      /* button  Submit */
     $(document).on("click", ".uib_w_8", function(evt)
     {
-       /* your code goes here */ 
+       alert("at least I'm here");/* your code goes here */ 
+        initDatabase();
     });
     
     }

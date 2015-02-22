@@ -64,6 +64,7 @@
         <script type="application/javascript" src="app_framework/appframework.js"></script>
         <script type="application/javascript" src="app_framework/appframework.ui.js"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="js/database_sql.js"></script>
         <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
         <!--            
             You may substitute jQuery for the App Framework selector library.
@@ -97,10 +98,18 @@
             <div class="upage panel" id="mainpage" data-header="af-header-0" data-footer="none">
                 <div class="upage-content content-area vertical-col left" id="uib_page_2">
 
+                    <div class="widget uib_w_10 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img>
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+
                     <a href="&lt;figcaption" data-position="bottom">
                     </a>
 
-                    <div class="widget uib_w_1 scale-image d-margins txt_margins show" data-uib="media/img" data-ver="0">
+                    <div class="widget uib_w_1 scale-image show d-margins txt_margins" data-uib="media/img" data-ver="0">
                         <figure class="figure-align">
                             <a href="#add_item_page" data-transition="fade">
                                 <img src="images/plus.png">
@@ -113,6 +122,7 @@
                         <a href="&lt;figcaption" data-position="bottom">
                         </a>
                     </div>
+
                 </div>
 
             </div>
@@ -124,18 +134,18 @@
                         <div class="table-thing with-label widget uib_w_6 d-margins labelstyle" data-uib="app_framework/input" data-ver="0">
                             <label class="narrow-control label-inline" for="todoitem">I want to</label>
 
-                            <input id="todoitem" class="wide-control" type="text" placeholder="enter item">
+                            <input id="todoitem" class="wide-control" type="text" placeholder="Enter item">
                         </div>
-                        <div>
-                            <label for="someid">When</label>
-                            <input type="date" id="someid" class="jq-ui-forms">
+                        <div class="table-thing with-label widget uib_w_6 d-margins labelstyle" data-uib="app_framework/input" data-ver="0">
+                            <label class="narrow-control label-inline" for="someid">When</label>
+                            <input type="date" id="someid" class="wide-control">
                         </div>
-
                         <div class="table-thing with-label widget uib_w_7 d-margins" data-uib="app_framework/input" data-ver="0">
                             <label class="narrow-control label-inline" for="reminder">Reminder</label>
 
-                            <input class="wide-control" placeholder="Placeholder Text" type="text" id="reminder">
+                            <input class="wide-control" placeholder="Add a reminder" type="text" id="reminder">
                         </div>
+
                         <a class="button widget uib_w_8 icon check button_margin show d-margins txt_margins" data-uib="app_framework/button" data-ver="0" id="submitButton">Submit</a>
                         <a class="button widget uib_w_9 d-margins icon home" data-uib="app_framework/button" data-ver="0" id="home" href="#mainpage" data-transition="fade">Home</a>
                     </div>

@@ -21,8 +21,7 @@ var DataType;
 {
  
     try {
- 
-        if (!window.openDatabase)  // Check browser is supported SQLite or not.
+           if (!window.openDatabase)  // Check browser is supported SQLite or not.
  
         {
  
@@ -33,7 +32,7 @@ var DataType;
         else {
  
             createTable();  // If supported then call Function for create table in SQLite
- 
+            alert('table created');
         }
  
     }
@@ -149,7 +148,7 @@ function loadAndReset() //Function for Load and Reset...
  
     resetForm();
  
-    showRecords()
+    showRecords();
  
 }
  
@@ -165,7 +164,7 @@ function showRecords() // Function For Retrive data from Database Display record
  
 {
  
-    $("#results").html('')
+    $("#results").html('');
  
     db.transaction(function (tx) {
  
@@ -194,7 +193,7 @@ function showRecords() // Function For Retrive data from Database Display record
 $(document).ready(function () // Call function when page is ready for load..
  
 {
-;
+
  
     $("body").fadeIn(2000); // Fede In Effect when Page Load..
  
